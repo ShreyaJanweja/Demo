@@ -1,0 +1,13 @@
+name: Welcome New Contributors
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greet the contributor
+        run: echo "Thank you for your pull request! We will review it soon."
